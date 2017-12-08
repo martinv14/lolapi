@@ -19,7 +19,7 @@ class ApiCall
 		
 		$info = $this->makeRequest($url);
 
-		return $info;
+		return $info['champions'];
 	}
 
 	public function makeRequest($url)
