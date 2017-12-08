@@ -19,3 +19,6 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 
 Route::get('/call', 'ApiController@call');
+
+Route::get('/champions', 'ChampionController@index');
+Route::get('/champions/{id}', 'ChampionController@show');

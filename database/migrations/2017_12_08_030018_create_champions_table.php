@@ -16,6 +16,8 @@ class CreateChampionsTable extends Migration
         Schema::create('champions', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('riot_id');
+            $table->string('name')->nullable();
+            $table->string('title')->nullable();
             $table->boolean('active');
             $table->boolean('botEnabled');
             $table->boolean('freeToPlay');
